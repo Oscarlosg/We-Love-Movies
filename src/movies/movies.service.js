@@ -8,7 +8,7 @@ function list() {
 
 function listIsShowing() {
   return knex("movies as m")
-    .distinct("m.movie_id as id")
+    .distinct("m.movie_id")
     .join("movies_theaters as mt", "m.movie_id", "mt.movie_id")
     .select(
       "m.title",
