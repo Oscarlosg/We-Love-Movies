@@ -1,0 +1,29 @@
+{
+  "name": "we-love-movies",
+  "version": "1.0.0",
+  "description": "main folder for We-Love-Movies app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Oscarlosg/We-Love-Movies"
+  },
+  "scripts": {
+    "start": "echo \"You must cd to either client or sever directory before running npm start\" && exit 1",
+    "install" : "cd client && npm i && cd ../server && npm i && cd .."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "^0.21.12",
+    "morgan": "^1.10.0",
+    "pg": "^8.4.2"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6",
+    "supertest": "^6.1.3"
+  }
+}

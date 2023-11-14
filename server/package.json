@@ -1,13 +1,9 @@
 {
-  "name": "project-movie-back-end",
+  "name": "we-love-movies-server",
   "version": "1.0.0",
-  "description": "zid-be-project-movie-01-qualified",
+  "description": "server folder for We-Love-Movies app",
   "main": "src/app.js",
   "scripts": {
-    "docker:build": "docker image build . -t thinkful-ed/zid-be-project-movie-01-qualified",
-    "docker:run": "docker run --rm -it -p 5000:5000 thinkful-ed/zid-be-project-movie-01-qualified",
-    "docker:stop": "docker stop $(docker ps -q)",
-    "docker:test": "docker run -t  thinkful-ed/zid-be-project-movie-01-qualified npm test",
     "knex": "knex",
     "migrate": "knex migrate:latest",
     "reset": "npm run rollback && npm run migrate && npm run seed",
@@ -15,9 +11,7 @@
     "seed": "knex seed:run",
     "start": "node src/server.js",
     "start:dev": "nodemon src/server.js",
-    "start:solution": "docker-compose up --build",
-    "test": "jest",
-    "test:solution": "docker-compose build && docker-compose run --rm api npm test && docker-compose down"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
