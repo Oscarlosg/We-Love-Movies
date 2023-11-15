@@ -27,7 +27,7 @@ In the second terminal:
 1. run "npm start"
   
 ### Screenshots
-![Main screenshot.](Assets/WE-love-movies.png)
+![Main screenshot.](assets/WE-love-movies.png)
 
 ## Built With
 
